@@ -24,15 +24,13 @@ Display the total cost of picks.
 guitar_picks_ordered = int(input("How many guitar picks do you wish to buy? "))
 
 # Define price per pick
-price_per_pick = None # in dollars
+price_per_pick = 0.25 # in dollars
 if guitar_picks_ordered >= 36: 
     price_per_pick = 0.19
 elif guitar_picks_ordered >= 24:
     price_per_pick = 0.21
 elif guitar_picks_ordered >= 12:
     price_per_pick = 0.23
-else: 
-    price_per_pick = 0.25
 
 # Calculate cost and display
 cost_of_picks = guitar_picks_ordered * price_per_pick
