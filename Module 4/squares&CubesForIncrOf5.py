@@ -2,7 +2,7 @@
 # 2543681
 # COP1000
 
-# collaborator: none
+# collaborator: https://www.w3schools.com/python/python_string_formatting.asp (for formatting)
 
 """ 
 Psuedocode
