@@ -21,21 +21,20 @@ Check that the function ISN'T imported by seeing if the name of the program is m
 """
 import random
 
-def show_larger(num1, num2):
-    if num1 > num2:
-        diff = num1 - num2
-        print(f'{num1} is larger than {num2} by {diff}')
-    if num2 > num1:
-        diff = num2 - num1
-        print(f'{num2} is larger than {num1} by {diff}')
-    if num1 == num2:
-        print(f'The integers are equal, both are {num1}')
+def show_larger(num_1, num_2):
+    if num_1 > num_2:
+        diff = num_1 - num_2
+        print(f'{num_1} is larger than {num_2} by {diff}')
+    if num_2 > num_1:
+        diff = num_2 - num_1
+        print(f'{num_2} is larger than {num_1} by {diff}')
+    if num_1 == num_2:
+        print(f'The integers are equal, both are {num_1}')
 
 def main():
-    numA = random.randint(1,5)
-    numB = random.randint(1,5)
-    show_larger(numA, numB)
+    num_A = random.randint(1,5)
+    num_B = random.randint(1,5)
+    show_larger(num_A, num_B)
 
 if __name__ == '__main__':
     main()
-    
