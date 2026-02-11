@@ -22,15 +22,19 @@ Check that the function ISN'T imported by seeing if the name of the program is m
 
 import temps
 
+# Main Function
 def main():
+    # Takes inputs
     temp = int(input("Enter a temperature? "))
     type_temp = input("Was that input Fahrenheit or Celsius c/f? ")
 
+    # Check which conversion to use
     if type_temp == 'f' :
         temps.f_to_c(temp)
     elif type_temp == 'c' :
         new_fah = temps.c_to_f(temp)
         print(f'{temp} Celsius is {new_fah:.1f} Fahrenheit')
 
+# Check main
 if __name__ == '__main__' :
     main()

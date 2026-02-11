@@ -18,10 +18,14 @@ Define a function taht converts the temperature from Cel to Fah and takes Cel as
     
 """
 
+# Functions 
+
+# Fahrenheit to Celsius 
 def f_to_c(fah):
     cel = (fah-32) * 5 / 9
     print(f'{fah} Fahrenheit equals {cel:.1f} Celsius')
 
+# Celsius to Fahrenheit 
 def c_to_f(cel):
     fah = cel * 9 / 5 + 32
     return fah
