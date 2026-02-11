@@ -15,7 +15,7 @@ Define a function taht converts the temperature from Cel to Fah and takes Cel as
     Take Cel, multiply it by 9, divide by 5, then add 32 and save it as Fah
     Return Fah
 
-
+    
 """
 
 def f_to_c(fah):
@@ -23,5 +23,5 @@ def f_to_c(fah):
     print(f'{fah} Fahrenheit equals {cel:.1f} Celsius')
 
 def c_to_f(cel):
-    fah = cel * 9 / 5 - 32
+    fah = cel * 9 / 5 + 32
     return fah
