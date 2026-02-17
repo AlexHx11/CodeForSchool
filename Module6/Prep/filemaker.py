@@ -24,9 +24,9 @@ def main():
 
     # Prompts the user for input and writes it in
     while (name := input("Enter first name of friend or Enter to quit ")) != '':
-        friends.write(name)
-        age = int(input("Enter age (integer) of this friend "))
-        friends.write(age)
+        friends.write(f"{name}\n")
+        age = input("Enter age (integer) of this friend ")
+        friends.write(f"{age}\n")
 
     # Notifies and closes the file
     print("File was created")
