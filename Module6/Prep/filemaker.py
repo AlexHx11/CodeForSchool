@@ -19,18 +19,15 @@ Notify the user that the file was created
 """
 
 def main():
-    # Open the file in write mode
-    friends = open("friends.txt", "w")  
+    with open("friends.txt", "w") as friends:
+        # Prompts the user for input and writes it in
+        while (name := input("Enter first name of friend or Enter to quit ")) != '':
+            age = input("Enter age (integer) of this friend ")
+            friends.write(f"{name}\n")
+            friends.write(f"{age}\n")
 
-    # Prompts the user for input and writes it in
-    while (name := input("Enter first name of friend or Enter to quit ")) != '':
-        friends.write(f"{name}\n")
-        age = input("Enter age (integer) of this friend ")
-        friends.write(f"{age}\n")
-
-    # Notifies and closes the file
+    # Confirms the file is created
     print("File was created")
-    friends.close()
 
 if __name__ == "__main__":
     main()
