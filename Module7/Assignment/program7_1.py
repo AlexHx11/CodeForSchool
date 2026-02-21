@@ -49,7 +49,8 @@ def main():
         print('\n', end='')
 
     # Sum and display the sum
-    print(f'{'Sum of all ages:':<34}{(sum_tree_ages := sum(tree_ages))}')
+    sum_tree_ages = sum(tree_ages)
+    print(f'{'Sum of all ages:':<34}{sum_tree_ages}')
 
     # Oldest and youngest age
     print(f'{'Oldest Age:':<34}{max(tree_ages)}')
@@ -67,19 +68,19 @@ def main():
     print(f'{'Number of sapling-aged trees:':<34}{len(sapling_aged_trees)}')
 
     pole_staged_aged_trees = [age for age in tree_ages if age >= 21 and age <= 50]
-    print(f'{'Number of sapling-aged trees:':<34}{len(pole_staged_aged_trees)}')
+    print(f'{'Number of pole staged-aged trees:':<34}{len(pole_staged_aged_trees)}')
     
     mature_aged_trees = [age for age in tree_ages if age >= 51 and age <= 100]
-    print(f'{'Number of sapling-aged trees:':<34}{len(mature_aged_trees)}')    
+    print(f'{'Number of mature-aged trees:':<34}{len(mature_aged_trees)}')    
 
     old_growth_aged_trees = [age for age in tree_ages if age >= 101]
-    print(f'{'Number of sapling-aged trees:':<34}{len(old_growth_aged_trees)}')
+    print(f'{'Number of old growth-aged trees:':<34}{len(old_growth_aged_trees)}')
 
 
 # Descending Function
-def sort_descending(list):
-    list.sort(reverse=True)
-    return list
+def sort_descending(list_sorted):
+    list_sorted.sort(reverse=True)
+    return list_sorted
 
 
 if __name__ == '__main__':
