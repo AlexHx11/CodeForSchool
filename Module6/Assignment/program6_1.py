@@ -26,8 +26,13 @@ Notify the user that the file was created
 
 def main():
     with open("lpsale.txt", "w") as albums:
-        # Prompts the user for input 
-        while (title := input("Enter the album's title: ")) != '':
+
+        # Prompts the user for input
+        while True:
+            title = input("Enter the album's title: ")
+            # Leaves the loop if a blank line was entered
+            if title == '':
+                break
             artists = input("Enter the artist(s) name(s): ")
             reg_price = input("Enter the regular price: ")
             discount_prct = input("Enter the discount in percent: ")

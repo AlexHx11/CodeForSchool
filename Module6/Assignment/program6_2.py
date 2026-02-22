@@ -28,7 +28,11 @@ def main():
     with open("lpsale.txt", "r") as lpsales:
 
         # Takes inputs and saves them
-        while (title := lpsales.readline().rstrip()) != '':
+        while True:
+            title = lpsales.readline().rstrip() 
+            # Check for a blank line
+            if title == '':
+                break
             artist = lpsales.readline().rstrip()
             price = float(lpsales.readline())
             discount = int(lpsales.readline())
