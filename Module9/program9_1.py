@@ -54,10 +54,12 @@ def main():
 
             if (title not in games_w_devs) :
                 print("The specified title was not found.")
+                print("")
                 continue
             
             print(f"The developer(s) of '{title}' is/are: {games_w_devs[title]}")
 
+            print("")
             continue
 
         elif choice == '2':
@@ -66,6 +68,7 @@ def main():
 
             games_w_devs[title] = devs
 
+            print("")
             continue
 
         elif choice == '3':
@@ -73,11 +76,13 @@ def main():
 
             if (title not in games_w_devs) :
                 print("The specified title was not found.")
+                print("")
                 continue
 
             new_devs = input("Enter the new developer(s) of the game: ")
             games_w_devs[title] = new_devs
 
+            print("")
             continue
 
         elif choice == '4':
@@ -85,28 +90,33 @@ def main():
 
             if (title not in games_w_devs) :
                 print("The specified title was not found.")
+                print("")
                 continue
 
             del games_w_devs[title]
             print(f"The title '{title}' and its developer(s) have been deleted.")
 
+            print("")
             continue
 
         elif choice == '5':
             print(f"The number of titles is: {len(games_w_devs)}")
 
+            print("")
             continue
 
         elif choice == '6':
             for title, dev in games_w_devs.items() :
                 print(f"'{title}' by {dev}")
 
+            print("")
             continue
 
         elif choice == '7':
             for title in games_w_devs.keys() :
                 print(f"'{title}'")
 
+            print("")
             continue
 
         elif choice == '8':
