@@ -49,6 +49,7 @@ def main():
 
         choice = input("Enter your choice: ")
 
+        # Look up a game
         if choice == '1':
             title = input("Enter the title of the game: ")
 
@@ -62,6 +63,7 @@ def main():
             print("")
             continue
 
+        # Add a new title with devs
         elif choice == '2':
             title = input("Enter the title of the game: ")
             devs = input("Enter the developer(s) of the game: ")
@@ -71,6 +73,7 @@ def main():
             print("")
             continue
 
+        # Update devs of a game
         elif choice == '3':
             title = input("Enter the title of the game: ")
 
@@ -85,6 +88,7 @@ def main():
             print("")
             continue
 
+        # Deletes a game with its devs
         elif choice == '4':
             title = input("Enter the title of the game: ")
 
@@ -99,12 +103,14 @@ def main():
             print("")
             continue
 
+        # Print the amount of games in the dictionary
         elif choice == '5':
             print(f"The number of titles is: {len(games_w_devs)}")
 
             print("")
             continue
 
+        # Print each game with devs
         elif choice == '6':
             for title, dev in games_w_devs.items() :
                 print(f"'{title}' by {dev}")
@@ -112,6 +118,7 @@ def main():
             print("")
             continue
 
+        # Print each game without devs
         elif choice == '7':
             for title in games_w_devs.keys() :
                 print(f"'{title}'")
@@ -119,6 +126,7 @@ def main():
             print("")
             continue
 
+        # Exit
         elif choice == '8':
             print("Goodbye!")
             break
